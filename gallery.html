@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
+    <!-- <style>
         .grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -14,6 +14,48 @@
             height: auto;
             border-radius: 8px;
         }
+    </style> -->
+    <style>
+    .grid {
+        display: grid;
+        gap: 20px;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Phones: 1 column */
+    @media (max-width: 480px) {
+        .grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    /* Small tablets: 2 columns */
+    @media (min-width: 481px) and (max-width: 767px) {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* Tablets: 3 columns */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    /* Desktops: 4 columns */
+    @media (min-width: 1024px) {
+        .grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
     </style>
 </head>
 <body>
