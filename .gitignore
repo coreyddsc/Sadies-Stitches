@@ -24,3 +24,6 @@ build/
 
 # Environment variables
 .env
+"# Python bytecode" 
+"__pycache__/" 
+"*.pyc" 
