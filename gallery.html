@@ -1,48 +1,59 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        padding: 15px;
-    }
+		<style>
+		body {
+			padding: 20px;
+		}
 
-    img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        display: block;
-    }
+		.grid {
+			column-count: 3;
+			column-gap: 20px;
+			max-width: 1600px;
+			margin: 0 auto;
+		}
 
-    @media (min-width: 768px) {
-        .grid {
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-    }
-    </style>
-</head>
-<body>
-    <div class="grid">
-        <img src="images/gallery/ambrosia.png" alt="Ambrosia">
-        <img src="images/gallery/la-rouge.png" alt="La Rouge">
-        <img src="images/gallery/ambrosia.png" alt="Ambrosia">
-        <img src="images/gallery/la-rouge.png" alt="La Rouge">
-        <img src="images/gallery/la-rouge.png" alt="La Rouge">
-        <img src="images/gallery/ambrosia.png" alt="Ambrosia">
-        <img src="images/gallery/la-rouge.png" alt="La Rouge">
-        <img src="images/gallery/ambrosia.png" alt="Ambrosia">
-        <img src="images/gallery/ambrosia.png" alt="Ambrosia">
-        <img src="images/gallery/la-rouge.png" alt="La Rouge">
-        <img src="images/gallery/ambrosia.png" alt="Ambrosia">
-        <img src="images/gallery/la-rouge.png" alt="La Rouge">
-    </div>
-</body>
-</html>
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+			display: block;
+			margin-bottom: 20px;
+			break-inside: avoid;
+		}
+
+		@media (min-width: 1200px) {
+			.grid {
+				column-count: 3;
+				column-gap: 25px;
+				max-width: 1600px;
+			}
+		}
+
+		/* Optional: adjust columns for smaller screens */
+		@media (max-width: 768px) {
+			.grid {
+				column-count: 2;
+				column-gap: 15px;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<div class="grid">
+			<img src="images/gallery/camus.png" class="landscape" alt="">
+        <img src="images/gallery/fairyfolk1.png" class="landscape" alt="">
+        <img src="images/gallery/fairyfolk2.png" class="landscape" alt="">
+        <img src="images/gallery/fairyfolk3.png" class="landscape" alt="">
+        <img src="images/gallery/fairyfolk4.png" class="landscape" alt="">
+        <img src="images/gallery/fairyfolk5.png" class="landscape" alt="">
+        <img src="images/gallery/personalcollection1.png" class="landscape" alt="">
+        <img src="images/gallery/personalcollection2.png" class="landscape" alt="">
+        <img src="images/gallery/personalcollection3.png" class="landscape" alt="">
+        <img src="images/gallery/personalcollection4.png" class="landscape" alt="">
+		</div>
+	</body>
+	</html>
