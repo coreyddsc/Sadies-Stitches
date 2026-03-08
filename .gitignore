@@ -27,4 +27,6 @@ build/
 "# Python bytecode" 
 "__pycache__/" 
 "*.pyc" 
-".vscode/" 
+".vscode/"
+
+images/demo/
