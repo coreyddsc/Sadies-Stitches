@@ -46,7 +46,7 @@ def get_aspect_ratio(image_path: Path):
     return aspect_ratio
 
 def classify_aspect_ratio(aspect: float):
-	if aspect > 1.2:  # Wider than tall
+	if aspect > 1.1:  # Wider than tall
 		classification = "landscape"
 	elif aspect < 0.8:  # Taller than wide
 		classification = "portrait"
